@@ -868,6 +868,48 @@ export default function GoogleBusinessProfilePage() {
           </div>
 
           <GoogleBusinessProfileForm />
+
+          {/* Hidden forms for Netlify detection */}
+          <div style={{ display: 'none' }}>
+            {/* Initial contact form - for Netlify detection */}
+            <form name="initial-contact-form" method="POST" data-netlify="true">
+              <input name="businessName" />
+              <input name="businessPhone" />
+              <input name="businessEmail" />
+              <input name="agreeToTerms" />
+              <input name="timestamp" />
+            </form>
+
+            {/* Verification form - for Netlify detection */}
+            <form name="google-business-profile-verification" method="POST" data-netlify="true">
+              <input name="timestamp" />
+              <input name="initial_businessName" />
+              <input name="initial_businessPhone" />
+              <input name="initial_businessEmail" />
+              <input name="initial_agreeToTerms" />
+              <input name="fullName" />
+              <input name="reviewCount" />
+              <input name="previousSuspension" />
+              <input name="caseNumbers" />
+              <input name="businessAddress" />
+              <input name="addressVisible" />
+              <input name="officeType" />
+              <input name="signagePhotos_0" type="file" />
+              <input name="businessDocuments_0" type="file" />
+              <input name="utilityBill_0" type="file" />
+              <input name="receiptsInvoices_0" type="file" />
+              <input name="inventoryPhotos_0" type="file" />
+              <input name="vehiclePhoto_0" type="file" />
+              <input name="posSystemPhoto_0" type="file" />
+              <input name="marketingMaterials_0" type="file" />
+              <input name="primaryOwnerEmail" />
+              <input name="newAdditionalEmail" />
+              <input name="ownersRemoved" />
+              <input name="suspensionReason" />
+              <input name="recentChanges" />
+              <input name="additionalInfo" />
+            </form>
+          </div>
         </div>
       </section>
 
