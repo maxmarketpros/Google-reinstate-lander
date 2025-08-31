@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Google Business Profile Suspended? Get Reinstated Fast | Max Market Pros",
   description:
-    "Professional Google Business Profile reinstatement service. Get your suspended GMB listing back online quickly with our proven process. Call (949) 603-0389 for expert help.",
+    "Professional Google Business Profile reinstatement service. Get your suspended GMB listing back online quickly with our proven process. Call (888) 401-4221 for expert help.",
   keywords:
     "Google Business Profile suspended, GMB suspension, Google My Business reinstatement, suspended business profile, Google listing suspended, GMB appeal, business profile restoration",
   authors: [{ name: "Max Market Pros" }],

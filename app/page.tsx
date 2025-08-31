@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import GoogleBusinessProfileForm from "@/components/GoogleBusinessProfileForm"
 
 export default function GoogleBusinessProfilePage() {
   const [activeTab, setActiveTab] = useState("essential-info")
@@ -129,9 +130,11 @@ export default function GoogleBusinessProfilePage() {
                 asChild
                 className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium"
               >
-                <a href="tel:+19496030389">Call Now: (949) 603-0389</a>
+                <a href="tel:+18884014221">Call Now: (888) 401-4221</a>
               </Button>
-              <Button className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium">
+              <Button 
+                onClick={() => scrollToSection("reinstatement-form")}
+                className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium">
                 Start Now
               </Button>
 
@@ -182,9 +185,11 @@ export default function GoogleBusinessProfilePage() {
                   asChild
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium mx-2 mt-2"
                 >
-                  <a href="tel:+19496030389">Call Now: (949) 603-0389</a>
+                  <a href="tel:+18884014221">Call Now: (888) 401-4221</a>
                 </Button>
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium mx-2">
+                <Button 
+                  onClick={() => scrollToSection("reinstatement-form")}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium mx-2">
                   Start Now
                 </Button>
               </nav>
@@ -211,6 +216,7 @@ export default function GoogleBusinessProfilePage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
+                  onClick={() => scrollToSection("reinstatement-form")}
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
                 >
@@ -222,7 +228,7 @@ export default function GoogleBusinessProfilePage() {
                   size="lg"
                   className="border-border text-foreground hover:bg-muted px-8 py-4 rounded-lg text-base font-medium bg-transparent"
                 >
-                  <a href="tel:+19496030389">Call: (949) 603-0389</a>
+                  <a href="tel:+18884014221">Call: (888) 401-4221</a>
                 </Button>
               </div>
 
@@ -313,13 +319,16 @@ export default function GoogleBusinessProfilePage() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <Button
+            onClick={() => scrollToSection("reinstatement-form")}
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
           >
             Get started
           </Button>
-          <Button className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium">
-            Start Now
+          <Button 
+            asChild
+            className="hidden sm:flex bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-medium">
+            <a href="tel:+18884014221">Call: (888) 401-4221</a>
           </Button>
         </div>
       </section>
@@ -373,13 +382,16 @@ export default function GoogleBusinessProfilePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-16">
             <Button
+              onClick={() => scrollToSection("reinstatement-form")}
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
             >
               Get started
             </Button>
-            <Button className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium">
-              Start Now
+            <Button 
+              asChild
+              className="hidden sm:flex bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-medium">
+              <a href="tel:+18884014221">Call: (888) 401-4221</a>
             </Button>
           </div>
         </div>
@@ -439,13 +451,14 @@ export default function GoogleBusinessProfilePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-16">
             <Button
+              asChild
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
             >
               Get started
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="tel:+19496030389">Call: (949) 603-0389</a>
+              <a href="tel:+18884014221">Call: (888) 401-4221</a>
             </Button>
           </div>
         </div>
@@ -488,11 +501,11 @@ export default function GoogleBusinessProfilePage() {
                       and project bookings.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+                      <Button onClick={() => scrollToSection("reinstatement-form")} size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
                         Get started
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <a href="tel:+19496030389">Call: (949) 603-0389</a>
+                        <a href="tel:+18884014221">Call: (888) 401-4221</a>
                       </Button>
                     </div>
                   </div>
@@ -567,11 +580,11 @@ export default function GoogleBusinessProfilePage() {
                       requests come from your restored profile.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+                      <Button onClick={() => scrollToSection("reinstatement-form")} size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
                         Get started
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <a href="tel:+19496030389">Call: (949) 603-0389</a>
+                        <a href="tel:+18884014221">Call: (888) 401-4221</a>
                       </Button>
                     </div>
                   </div>
@@ -616,13 +629,14 @@ export default function GoogleBusinessProfilePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-16">
             <Button
+              asChild
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
             >
               Get started
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="tel:+19496030389">Call: (949) 603-0389</a>
+              <a href="tel:+18884014221">Call: (888) 401-4221</a>
             </Button>
           </div>
         </div>
@@ -687,13 +701,14 @@ export default function GoogleBusinessProfilePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-16">
             <Button
+              asChild
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
             >
               Get started
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="tel:+19496030389">Call: (949) 603-0389</a>
+              <a href="tel:+18884014221">Call: (888) 401-4221</a>
             </Button>
           </div>
         </div>
@@ -709,7 +724,7 @@ export default function GoogleBusinessProfilePage() {
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
               Restore your Business Profile in three simple steps.
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-medium">
+            <Button onClick={() => scrollToSection("reinstatement-form")} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base font-medium">
               Start now
             </Button>
           </div>
@@ -829,17 +844,113 @@ export default function GoogleBusinessProfilePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-16">
             <Button
+              asChild
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-medium shadow-sm hover:shadow-md transition-all duration-200"
             >
               Get started
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="tel:+19496030389">Call: (949) 603-0389</a>
+              <a href="tel:+18884014221">Call: (888) 401-4221</a>
             </Button>
           </div>
         </div>
       </section>
+
+      {/* Google Business Profile Reinstatement Form */}
+      <section className="bg-white py-20" id="reinstatement-form">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Start Your Reinstatement Process</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Complete our comprehensive assessment to get your Google Business Profile reinstated quickly and compliantly.
+            </p>
+          </div>
+
+          <GoogleBusinessProfileForm />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Company Info */}
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <img src="/max-market-pros-logo.png" alt="Max Market Pros" className="h-8 w-auto" />
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                Professional Google Business Profile reinstatement services. Get your suspended listing back online quickly with our proven process.
+              </p>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold">Contact Us</h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <a href="tel:+18884014221" className="text-gray-300 hover:text-blue-400 transition-colors">
+                    (888) 401-4221
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-gray-300">Available 7 Days a Week</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold">Quick Links</h3>
+              <div className="space-y-3">
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="block text-gray-300 hover:text-blue-400 transition-colors text-left"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="block text-gray-300 hover:text-blue-400 transition-colors text-left"
+                >
+                  Process
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="block text-gray-300 hover:text-blue-400 transition-colors text-left"
+                >
+                  FAQ
+                </button>
+                <button
+                  onClick={() => scrollToSection("reinstatement-form")}
+                  className="block text-gray-300 hover:text-blue-400 transition-colors text-left"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-800 mt-12 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p className="text-gray-400 text-sm">
+                © {new Date().getFullYear()} Max Market Pros. All rights reserved.
+              </p>
+              <div className="flex items-center space-x-6">
+                <span className="text-gray-400 text-sm">Professional Google Business Profile Reinstatement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
