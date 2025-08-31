@@ -1,0 +1,23 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Business building with restoration arrow -->
+  <rect x="6" y="12" width="20" height="16" fill="#2563eb" rx="2"/>
+  <rect x="8" y="14" width="3" height="3" fill="white"/>
+  <rect x="12" y="14" width="3" height="3" fill="white"/>
+  <rect x="17" y="14" width="3" height="3" fill="white"/>
+  <rect x="21" y="14" width="3" height="3" fill="white"/>
+  <rect x="8" y="18" width="3" height="3" fill="white"/>
+  <rect x="12" y="18" width="3" height="3" fill="white"/>
+  <rect x="17" y="18" width="3" height="3" fill="white"/>
+  <rect x="21" y="18" width="3" height="3" fill="white"/>
+  <rect x="8" y="22" width="3" height="4" fill="white"/>
+  <rect x="12" y="22" width="3" height="4" fill="white"/>
+  <rect x="17" y="22" width="3" height="4" fill="white"/>
+  <rect x="21" y="22" width="3" height="4" fill="white"/>
+  
+  <!-- Restoration/recovery arrow -->
+  <path d="M16 3L20 7H18V11H14V7H12L16 3Z" fill="#10b981" stroke="white" stroke-width="0.5"/>
+  
+  <!-- Small "G" for Google -->
+  <circle cx="24" cy="8" r="4" fill="white"/>
+  <path d="M22 8C22 6.9 22.9 6 24 6C25.1 6 26 6.9 26 8H25V9H26C26 10.1 25.1 11 24 11C22.9 11 22 10.1 22 8Z" fill="#ea4335"/>
+</svg>
