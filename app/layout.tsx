@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Max Market Pros",
     images: [
       {
-        url: "/GBP-Suspension_Hero-Image.webp",
+        url: "/GBP-Suspension_Hero-Image - Edited.png",
         width: 1200,
         height: 630,
         alt: "Google Business Profile Suspension - Professional Reinstatement Service"
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Google Business Profile Suspended? Get Reinstated Fast",
     description:
       "Professional Google Business Profile reinstatement service. Get your suspended GMB listing back online quickly with our proven process.",
-    images: ["/GBP-Suspension_Hero-Image.webp"]
+    images: ["/GBP-Suspension_Hero-Image - Edited.png"]
   },
   alternates: {
     canonical: "https://maxmarketpros.com", // Replace with actual domain

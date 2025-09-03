@@ -252,7 +252,7 @@ export default function GoogleBusinessProfilePage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl transform rotate-3"></div>
                 <img
-                  src="/GBP-Suspension_Hero-Image.webp"
+                  src="/GBP-Suspension_Hero-Image - Edited.png"
                   alt="Google Business Profile suspension notification"
                   className="relative w-full max-w-lg h-auto rounded-2xl shadow-2xl border border-border"
                 />
@@ -372,7 +372,7 @@ export default function GoogleBusinessProfilePage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <img
-                  src="/google-mobile-profile.webp"
+                  src="/google-mobile-profile - Edited.jpg"
                   alt="Mobile phone showing Google Search with Business Profile card"
                   className="w-full max-w-md h-auto rounded-2xl shadow-lg"
                 />
@@ -413,7 +413,7 @@ export default function GoogleBusinessProfilePage() {
               <div className="relative">
                 <div className="w-80 h-80 flex items-center justify-center">
                   <img
-                    src="/google-suspension-square.webp"
+                    src="/google-suspension-square - Edited.jpg"
                     alt="Suspended Google Business Profile with red prohibition symbol"
                     className="w-full h-full object-cover rounded-2xl shadow-lg"
                   />
