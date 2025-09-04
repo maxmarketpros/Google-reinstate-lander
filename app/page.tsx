@@ -205,7 +205,7 @@ export default function GoogleBusinessProfilePage() {
             <div className="space-y-8 lg:space-y-10">
               <div className="space-y-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-foreground leading-tight tracking-tight">
-                  Get your <span className="text-blue-600 font-medium">Google Business Profile</span> reinstated
+                  Get your <span className="text-blue-600 font-medium">Google Business Profile</span> unsuspended and reinstated
                 </h1>
 
                 <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg font-normal">

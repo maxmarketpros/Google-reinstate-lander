@@ -735,26 +735,29 @@ export default function GoogleBusinessProfileForm() {
             </div>
 
               <div className="mt-8">
-                <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors">
+                <div 
+                  className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                  onClick={() => document.getElementById('signagePhotos')?.click()}
+                >
                   <div className="mb-4">
                     <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
                       <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
-                  <label htmlFor="signagePhotos" className="cursor-pointer">
+                  <div>
                     <span className="text-base font-medium text-gray-900">Photos: signage<span className="text-red-500 ml-1">*</span></span>
                     <span className="block text-sm text-gray-600 mt-1">Drag & drop or click to upload</span>
-              <input
-                      type="file" 
-                      id="signagePhotos" 
-                      name="signagePhotos" 
-                      multiple 
-                      accept="image/*,.pdf" 
-                      required
-                onChange={(e) => updateVerificationFormData('signagePhotos', e.target.files)}
-                      className="hidden"
-                    />
-                  </label>
+                  </div>
+                  <input
+                    type="file" 
+                    id="signagePhotos" 
+                    name="signagePhotos" 
+                    multiple 
+                    accept="image/*,.pdf" 
+                    required
+                    onChange={(e) => updateVerificationFormData('signagePhotos', e.target.files)}
+                    className="hidden"
+                  />
                   <div className="mt-4 text-sm text-gray-500">
                     <p className="font-medium mb-1">One of the following:</p>
                     <ul className="text-left space-y-1 max-w-md mx-auto">
@@ -792,25 +795,28 @@ export default function GoogleBusinessProfileForm() {
                 
                 <div className="space-y-6">
             <div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('businessDocuments')?.click()}
+                    >
                       <div className="mb-4">
                         <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
                           <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </div>
-                      <label htmlFor="businessDocuments" className="cursor-pointer">
+                      <div>
                         <span className="text-base font-medium text-gray-900">LLC / DBA / Registration</span>
                         <span className="block text-sm text-gray-600 mt-1">Drag & drop or click to upload</span>
-              <input
-                          type="file" 
-                          id="businessDocuments" 
-                          name="businessDocuments" 
-                          multiple 
-                          accept="image/*,.pdf" 
-                onChange={(e) => updateVerificationFormData('businessDocuments', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="businessDocuments" 
+                        name="businessDocuments" 
+                        multiple 
+                        accept="image/*,.pdf" 
+                        onChange={(e) => updateVerificationFormData('businessDocuments', e.target.files)}
+                        className="hidden"
+                      />
                       <p className="text-sm text-gray-500 mt-2">Name should match your listing.</p>
                       {verificationFormData.businessDocuments && verificationFormData.businessDocuments.length > 0 && (
                         <div className="mt-4 text-sm text-green-600">
@@ -823,25 +829,28 @@ export default function GoogleBusinessProfileForm() {
                   <div className="text-center text-gray-500 font-medium">OR</div>
 
             <div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('utilityBill')?.click()}
+                    >
                       <div className="mb-4">
                         <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
                           <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </div>
-                      <label htmlFor="utilityBill" className="cursor-pointer">
+                      <div>
                         <span className="text-base font-medium text-gray-900">Utility bill in business name</span>
                         <span className="block text-sm text-gray-600 mt-1">Drag & drop or click to upload</span>
-              <input
-                          type="file" 
-                          id="utilityBill" 
-                          name="utilityBill" 
-                          multiple 
-                          accept="image/*,.pdf" 
-                onChange={(e) => updateVerificationFormData('utilityBill', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="utilityBill" 
+                        name="utilityBill" 
+                        multiple 
+                        accept="image/*,.pdf" 
+                        onChange={(e) => updateVerificationFormData('utilityBill', e.target.files)}
+                        className="hidden"
+                      />
                       <p className="text-sm text-gray-500 mt-2">Shows service address and business name.</p>
                       {verificationFormData.utilityBill && verificationFormData.utilityBill.length > 0 && (
                         <div className="mt-4 text-sm text-green-600">
@@ -862,20 +871,23 @@ export default function GoogleBusinessProfileForm() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors">
-                      <label htmlFor="receiptsInvoices" className="cursor-pointer">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('receiptsInvoices')?.click()}
+                    >
+                      <div>
                         <span className="text-sm font-medium text-gray-900 block">Invoices / receipts</span>
                         <span className="block text-xs text-gray-600 mt-1">Click to upload</span>
-              <input
-                          type="file" 
-                          id="receiptsInvoices" 
-                          name="receiptsInvoices" 
-                          multiple 
-                          accept="image/*,.pdf" 
-                onChange={(e) => updateVerificationFormData('receiptsInvoices', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="receiptsInvoices" 
+                        name="receiptsInvoices" 
+                        multiple 
+                        accept="image/*,.pdf" 
+                        onChange={(e) => updateVerificationFormData('receiptsInvoices', e.target.files)}
+                        className="hidden"
+                      />
                       <p className="text-xs text-gray-500 mt-2">Recent is best; redact prices if you like.</p>
                       {verificationFormData.receiptsInvoices && verificationFormData.receiptsInvoices.length > 0 && (
                         <div className="mt-2 text-xs text-green-600">
@@ -886,20 +898,23 @@ export default function GoogleBusinessProfileForm() {
             </div>
 
                   <div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors">
-                      <label htmlFor="inventoryPhotos" className="cursor-pointer">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('inventoryPhotos')?.click()}
+                    >
+                      <div>
                         <span className="text-sm font-medium text-gray-900 block">Equipment / tools photos</span>
                         <span className="block text-xs text-gray-600 mt-1">Click to upload</span>
-              <input
-                          type="file" 
-                          id="inventoryPhotos" 
-                          name="inventoryPhotos" 
-                          multiple 
-                          accept="image/*" 
-                onChange={(e) => updateVerificationFormData('inventoryPhotos', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="inventoryPhotos" 
+                        name="inventoryPhotos" 
+                        multiple 
+                        accept="image/*" 
+                        onChange={(e) => updateVerificationFormData('inventoryPhotos', e.target.files)}
+                        className="hidden"
+                      />
                       <p className="text-xs text-gray-500 mt-2">What you use day-to-day.</p>
                       {verificationFormData.inventoryPhotos && verificationFormData.inventoryPhotos.length > 0 && (
                         <div className="mt-2 text-xs text-green-600">
@@ -910,20 +925,23 @@ export default function GoogleBusinessProfileForm() {
             </div>
 
               <div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors">
-                      <label htmlFor="vehiclePhoto" className="cursor-pointer">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('vehiclePhoto')?.click()}
+                    >
+                      <div>
                         <span className="text-sm font-medium text-gray-900 block">Branded vehicle</span>
                         <span className="block text-xs text-gray-600 mt-1">Click to upload</span>
-                <input
-                          type="file" 
-                          id="vehiclePhoto" 
-                          name="vehiclePhoto" 
-                          multiple 
-                          accept="image/*" 
-                  onChange={(e) => updateVerificationFormData('vehiclePhoto', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="vehiclePhoto" 
+                        name="vehiclePhoto" 
+                        multiple 
+                        accept="image/*" 
+                        onChange={(e) => updateVerificationFormData('vehiclePhoto', e.target.files)}
+                        className="hidden"
+                      />
                       <p className="text-xs text-gray-500 mt-2">If applicable.</p>
                       {verificationFormData.vehiclePhoto && verificationFormData.vehiclePhoto.length > 0 && (
                         <div className="mt-2 text-xs text-green-600">
@@ -934,20 +952,23 @@ export default function GoogleBusinessProfileForm() {
               </div>
 
               <div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors">
-                      <label htmlFor="posSystemPhoto" className="cursor-pointer">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('posSystemPhoto')?.click()}
+                    >
+                      <div>
                         <span className="text-sm font-medium text-gray-900 block">POS / cash register / printed receipt</span>
                         <span className="block text-xs text-gray-600 mt-1">Click to upload</span>
-                <input
-                          type="file" 
-                          id="posSystemPhoto" 
-                          name="posSystemPhoto" 
-                          multiple 
-                          accept="image/*" 
-                  onChange={(e) => updateVerificationFormData('posSystemPhoto', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="posSystemPhoto" 
+                        name="posSystemPhoto" 
+                        multiple 
+                        accept="image/*" 
+                        onChange={(e) => updateVerificationFormData('posSystemPhoto', e.target.files)}
+                        className="hidden"
+                      />
                       <p className="text-xs text-gray-500 mt-2">If you take in-person payments.</p>
                       {verificationFormData.posSystemPhoto && verificationFormData.posSystemPhoto.length > 0 && (
                         <div className="mt-2 text-xs text-green-600">
@@ -958,20 +979,23 @@ export default function GoogleBusinessProfileForm() {
             </div>
 
                   <div className="md:col-span-2">
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors">
-                      <label htmlFor="marketingMaterials" className="cursor-pointer">
+                    <div 
+                      className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      onClick={() => document.getElementById('marketingMaterials')?.click()}
+                    >
+                      <div>
                         <span className="text-sm font-medium text-gray-900 block">Business cards / flyers</span>
                         <span className="block text-xs text-gray-600 mt-1">Click to upload</span>
-              <input
-                          type="file" 
-                          id="marketingMaterials" 
-                          name="marketingMaterials" 
-                          multiple 
-                          accept="image/*,.pdf" 
-                onChange={(e) => updateVerificationFormData('marketingMaterials', e.target.files)}
-                          className="hidden"
-                        />
-                      </label>
+                      </div>
+                      <input
+                        type="file" 
+                        id="marketingMaterials" 
+                        name="marketingMaterials" 
+                        multiple 
+                        accept="image/*,.pdf" 
+                        onChange={(e) => updateVerificationFormData('marketingMaterials', e.target.files)}
+                        className="hidden"
+                      />
                       {verificationFormData.marketingMaterials && verificationFormData.marketingMaterials.length > 0 && (
                         <div className="mt-2 text-xs text-green-600">
                           {verificationFormData.marketingMaterials.length} file(s) uploaded
